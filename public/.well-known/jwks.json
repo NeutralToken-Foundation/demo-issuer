@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "kid": "sandbox-key-1",
+      "alg": "RS256",
+      "n": "<REPLACE_WITH_MODULUS>",
+      "e": "AQAB"
+    }
+  ]
+}
