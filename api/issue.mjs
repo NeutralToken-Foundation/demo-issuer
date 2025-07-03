@@ -38,7 +38,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (pathname === '/.well-known/jwks.json') {
-    const jwks = fs.readFileSync('../keys/jwks.json', 'utf8');
+    const jwks = fs.readFileSync(path.join(process.cwd(), 'keys', 'jwks.json'), 'utf8');
     res.writeHead(200, {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'
